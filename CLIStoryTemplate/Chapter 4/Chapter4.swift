@@ -26,7 +26,7 @@ func nonProfit() {
     }
     
 
-//func subjectList(){
+//func subjectList() {
 //    let subjectList = ["Music", "Art", " and Sports."]
 //    print (subjectList.joined(separator: ", "))
 //    print("BSAMs name originates from Sam, the yong boy who shot Johnathan")
