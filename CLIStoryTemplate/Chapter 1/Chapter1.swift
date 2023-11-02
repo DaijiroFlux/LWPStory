@@ -73,7 +73,7 @@ func choose(jonathanGetsShot: JonathanGetsShot) {
 
 let arr = ["Jonathan", "Jon", "John", "Joan"]
 
-let jonathanSings = String(JonathanSings,)
+//let jonathanSings = String(JonathanSings,)
 
 func chapterOne() {
     print("Jonathan", aspiringSinger())
