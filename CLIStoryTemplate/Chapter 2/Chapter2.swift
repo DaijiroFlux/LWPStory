@@ -7,6 +7,6 @@ import Foundation
 
 func chapterTwo() {
     
-    print("Test")
+    print("")
     // Your portion of the story goes here
 }
