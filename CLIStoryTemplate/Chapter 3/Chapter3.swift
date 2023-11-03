@@ -7,6 +7,6 @@ import Foundation
 
 func chapterThree() {
     
-    print("hfkhgfjgjcjhckjb,kvkhgckhcxjgzhfzhgjvlknlkbkj mncxbv cxfbxnmg,jk,jgnhmnvj")
+    //print("Test Paris")
     // Your portion of the story goes here
 }
