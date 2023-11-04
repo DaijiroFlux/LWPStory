@@ -45,41 +45,46 @@ var JonathansWife = Person.init(name: "Jonathan's Wife", age: 28, ethnicity: "Af
         var LosAngeles = city.init(cityName: "LosAngeles", cityRegion: "West", cityYear: 1995)
 
 func moveToLA() -> String {
-    return "after a long discussion, He and his wife decided they were going to move to LA."
+    return "After months of long discussions with his wife, they decided that they were moving to LA so Jonathan can persue his dream."
 }
 
 func aspiringSinger() -> String {
-    return "dreamed of becoming a famous gospel singer, and one day m "
+    return "He was the lead singer in his Church where he served the Lord with his gifts. Jonathan; like other singers from their church, dreamed of being famous with his gift, and one day wanted to make the big leap of faith to persue that dream."
 }
 
 func livedInDetroit() -> String {
-    return "Jonathan and his wife live a very humble life on the Eastside of Detroit."
+    return "Jonathan and his wife lived a very humble life on the Eastside of Detroit. They were both hardworking citizens of the city and were both heavily involved in church and their faith with Christ has always been strong and true."
 }
 
-enum JonathanGetsShot {
-    case shot, notShot, neverHappened
+enum TheyMovedToLA {
+    case moved, notMoved, neverHappened
 }
 
-func choose(jonathanGetsShot: JonathanGetsShot) {
-    switch jonathanGetsShot {
-    case .shot:
-        print("was shot in the leg and had a near death experience.")
-    case .notShot:
-        print("luckily the bullet missed him.")
+func choose(theyMovedToLA: TheyMovedToLA) {
+    switch theyMovedToLA {
+    case .moved:
+        print("Jonathtan and his wife sold everything they had of value to financially help them with the move to California.")
+    case .notMoved:
+        print("they decided not to make the move because money was tight.")
     case .neverHappened:
         print("this event never happened.")
     }
 }
 
-let arr = ["Jonathan", "Jon", "John", "Joan"]
 
-//let jonathanSings = String(JonathanSings,)
-
+//var jonathanStruggles = [String]
+//for i in 1...2 {
+    //jonathanStruggles[i] = ("Jonathan\(i)")
+//}
 func chapterOne() {
-    print("Jonathan", aspiringSinger())
-    print(moveToLA())
+    print(livedInDetroit()) ; print(aspiringSinger())
+    print(moveToLA()) ; print(choose(theyMovedToLA: .moved))
     
-    
+    let story = ["After moving into their humble apartment in LA, they oth immediately began working multiple jobs, consisting late night shifts, double shifts, and at times even a triple shift."]
+
+    for x in story {
+        print(x)
+    }
     
     
     
