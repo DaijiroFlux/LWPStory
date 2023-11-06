@@ -70,6 +70,18 @@ func choose(theyMovedToLA: TheyMovedToLA) {
         print("this event never happened.")
     }
 }
+func whenJonathanMovedtoCali(city: String) -> Int? {
+    if city == "Detroit, MI" { return 1990 }
+    if city == "Detroit, MI" { return 1992 }
+    if city == "Los Angeles, CA" { return 1994 }
+    if city == "Detroit, MI" { return 1996 }
+    if city == "Detroit, MI" { return 1998 }
+    
+    return nil
+}
+
+var year = whenJonathanMovedtoCali(city: "Los Angeles, CA")
+
 
 
 //var jonathanStruggles = [String]
@@ -79,8 +91,12 @@ func choose(theyMovedToLA: TheyMovedToLA) {
 func chapterOne() {
     print(livedInDetroit()) ; print(aspiringSinger())
     print(moveToLA()) ; print(choose(theyMovedToLA: .moved))
-    
-    let story = ["After moving into their humble apartment in LA, they oth immediately began working multiple jobs, consisting late night shifts, double shifts, and at times even a triple shift."]
+    if year == nil {
+        print("There was an error")
+    } else {
+        print("It was late spring of \(year!) when they made the move.")
+    }
+    let story = ["After moving into their humble apartment in LA, they immediately began working multiple jobs, consisting of late night shifts, double shifts, and at times even working up to 18 hours a day."]
 
     for x in story {
         print(x)
