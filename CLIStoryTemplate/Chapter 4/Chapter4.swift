@@ -4,15 +4,6 @@
 //
 
 import Foundation
-
-
-func chapterFour(){
-    
-    nonProfit()
-//    subjectList()
-    
-    
-}
     
 
 func nonProfit() {
@@ -25,28 +16,41 @@ func nonProfit() {
         print("Every week, the nonprofit focuses on different positive subjects such as ")
     }
     
-
-//func subjectList() {
-//    let subjectList = ["Music", "Art", " and Sports."]
-//    print (subjectList.joined(separator: ", "))
-//    print("BSAMs name originates from Sam, the yong boy who shot Johnathan")
     
-
-enum subjects {
+    //func subjectList() {
+    //    let subjectList = ["Music", "Art", " and Sports."]
+    //    print (subjectList.joined(separator: ", "))
+    //    print("BSAMs name originates from Sam, the yong boy who shot Johnathan")
+}
+enum Activities {
     case music, art, sports
 }
+func Arts(subjects: Activities) {
+    switch subjects {
+    case .art:
+        print("art, music, sports")
+    case .music:
+        print("BSAM")
+    case .sports:
+        print("this is fake")
+    }
+}
 
-struct character {
-    let nonProfit: subjects
-    let subject:String
+    
+//struct character {
+   // let nonProfit:
+   // let subject:String
+    
+//}
+//let arr:[subjects] = [.music, .art, .sports]
+
+//for objects in arr {
+
+func chapterFour() {
+    
+    nonProfit()
+    print(Arts(subjects: .art))
+    
+    
     
 }
-let arr:[subjects] = [.music, .art, .sports]
-
-for subjects in arr {
-    
-    print(subjects)
-}
-}
-
-
