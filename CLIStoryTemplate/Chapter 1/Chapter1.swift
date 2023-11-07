@@ -53,7 +53,7 @@ func aspiringSinger() -> String {
 }
 
 func livedInDetroit() -> String {
-    return "Jonathan and his wife lived a very humble life on the Eastside of Detroit. They were both hardworking citizens of the city and were both heavily involved in church and their faith with Christ has always been strong and true."
+    return "and his wife lived a very humble life on the Eastside of Detroit. They were both hardworking citizens of the city and were both heavily involved in church and their faith with Christ has always been strong and true."
 }
 
 enum TheyMovedToLA {
@@ -89,6 +89,7 @@ var year = whenJonathanMovedtoCali(city: "Los Angeles, CA")
     //jonathanStruggles[i] = ("Jonathan\(i)")
 //}
 func chapterOne() {
+    print(Jonathan)
     print(livedInDetroit()) ; print(aspiringSinger())
     print(moveToLA()) ; print(choose(theyMovedToLA: .moved))
     if year == nil {
