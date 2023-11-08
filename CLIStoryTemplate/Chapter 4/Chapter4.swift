@@ -8,7 +8,10 @@ import Foundation
 
 func nonProfit() {
     let creatingNonprofit = true
-//declared function as non profit
+    
+    
+    
+//declared function as non profit and created boolean statement so that if creating non profit = true code will print
     
     
     print ("Jonathan created a nonprofit after getting shot, experiencing a life altering event.")
@@ -23,7 +26,7 @@ func nonProfit() {
     
     let fieldTrips = 2
     let jobSearch = 1
-    // constants
+    
     if fieldTrips > jobSearch {
         print("They go on more fieldtrips for fun to attend")
     }
@@ -47,7 +50,9 @@ func chapterFour() {
     enum sports {
         case basketball, football, games
     }
-    //created enum and named it sports, with different sports categories as the cases
+    
+    
+    //created enum and named it sports, with different categories of sports as the cases
     
     struct fieldTrips {
         let extracurriculars: sports
@@ -61,13 +66,14 @@ func chapterFour() {
     print(myFieldTrip.name, myFieldTrip.extracurriculars)
     print(yourFieldTrip.name, yourFieldTrip.extracurriculars)
     
-    // inside my enum used variables to name the different kinds of basketball and football games young boys attended in the story
+    // inside my enum used variables to name the different kinds of basketball and football games the young boys attended in the story
     
-    let arr:[sports] = [ .games]
+    let arr:[sports] = [.games]
     for sports in arr {
         print(sports)
         
-    //array
+    // used an array to list the different types of sports games in the story
+        
     }
     let age = samIsAlwaysPresent(place: "BSAM")
     //
@@ -78,6 +84,6 @@ func chapterFour() {
         print("There was an error")
     } else {
         print("Sam is now \(age!) and is consistantly present at the BSAM office. Now as a thriving mentor who helps facilitate projects and activities for several young boys at the organization, he has become a pivital part of BSAM itself and the larger part of youth culture in the ganglands of LA.")
-        // used conditional (if, else statement to print last sentence if sam's age is = nil or something other than  18 it wont print but if his age = 18 it will.
+        // used conditional (if, else statement to print last sentence if sam's age is = nil or something other than 18 it wont print but if age = 18 code will print.
     }
 }
