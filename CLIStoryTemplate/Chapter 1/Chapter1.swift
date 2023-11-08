@@ -5,44 +5,30 @@
 
 import Foundation
  
-
+ 
 struct Person {
     var name: String
-    var age: Int = 0
+    var age: Int
     var ethnicity: String
     let isSinger: Bool
     let isPersonOfGod: Bool
-    
-    init(name: String, age: Int, ethnicity: String, isSinger: Bool,
-         isPersonOfGod: Bool) {
-        self.name = name
-        self.age = age
-        self.ethnicity = ethnicity
-        self.isSinger = isSinger
-        self.isPersonOfGod = isPersonOfGod
         
     }
-        }
+        
 
-var Jonathan = Person.init(name: "Jonathan", age: 29, ethnicity: "African American",
+var Jonathan = Person.init(name: "Jonathan", age: 27, ethnicity: "African American", 
                            isSinger: true, isPersonOfGod: true)
-var JonathansWife = Person.init(name: "Jonathan's Wife", age: 28, ethnicity: "African American", 
-                                isSinger: false, isPersonOfGod: true)
-
-        struct city {
-            var cityName: String
-            var cityRegion: String
-            var cityYear: Int
-            
-            init(cityName: String, cityRegion: String, cityYear: Int) {
-                self.cityName = cityName
-                self.cityRegion = cityRegion
-                self.cityYear = cityYear
-            }
-        }
-
-        var Detroit = city.init(cityName: "Detroit", cityRegion: "Midwest", cityYear: 1994)
-        var LosAngeles = city.init(cityName: "LosAngeles", cityRegion: "West", cityYear: 1995)
+var wife = Person(name: "wife", age: 26, ethnicity: "African American",
+                           isSinger: false, isPersonOfGod: true)
+//        struct city {
+//            var cityName: String
+//            var cityRegion: String
+//            var cityYear: Int
+//            
+//        }
+//
+//        var Detroit = city.init(cityName: "Detroit", cityRegion: "Midwest", cityYear: 1994)
+//        var LosAngeles = city.init(cityName: "LosAngeles", cityRegion: "West", cityYear: 1995)
 
 func moveToLA() -> String {
     return "After months of long discussions with his wife, they decided that they were moving to LA so Jonathan can persue his dream."
@@ -83,13 +69,8 @@ func whenJonathanMovedtoCali(city: String) -> Int? {
 var year = whenJonathanMovedtoCali(city: "Los Angeles, CA")
 
 
-
-//var jonathanStruggles = [String]
-//for i in 1...2 {
-    //jonathanStruggles[i] = ("Jonathan\(i)")
-//}
 func chapterOne() {
-    print(Jonathan)
+    print(Jonathan) ; print("and his") ; print(wife)
     print(livedInDetroit()) ; print(aspiringSinger())
     print(moveToLA()) ; print(choose(theyMovedToLA: .moved))
     if year == nil {
@@ -102,12 +83,5 @@ func chapterOne() {
     for x in story {
         print(x)
     }
-    
-    
-    
-    
-    
-    
-    
 }
 
