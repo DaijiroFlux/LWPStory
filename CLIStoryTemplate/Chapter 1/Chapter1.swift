@@ -30,17 +30,17 @@ var wife = Person(name: "wife", age: 26, ethnicity: "African American",
 //        var Detroit = city.init(cityName: "Detroit", cityRegion: "Midwest", cityYear: 1994)
 //        var LosAngeles = city.init(cityName: "LosAngeles", cityRegion: "West", cityYear: 1995)
 
-func moveToLA() -> String {
-    return "After months of long discussions with his wife, they decided that they were moving to LA so Jonathan can persue his dream."
-}
-
-func aspiringSinger() -> String {
-    return "He was the lead singer in his Church where he served the Lord with his gifts. Jonathan; like other singers from their church, dreamed of being famous with his gift, and one day wanted to make the big leap of faith to persue that dream."
-}
 
 func livedInDetroit() -> String {
     return "and his wife lived a very humble life on the Eastside of Detroit. They were both hardworking citizens of the city and were both heavily involved in church and their faith with Christ has always been strong and true."
 }
+func aspiringSinger() -> String {
+    return "He was the lead singer in his Church where he served the Lord with his gifts. Jonathan; like other singers from their church, dreamed of being famous with his gift, and one day wanted to make the big leap of faith to persue that dream."
+}
+func moveToLA() -> String {
+    return "After months of long discussions with his wife, they decided that they were moving to LA so Jonathan can persue his dream."
+}
+
 
 enum TheyMovedToLA {
     case moved, notMoved, neverHappened
