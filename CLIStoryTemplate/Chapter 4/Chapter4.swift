@@ -23,7 +23,7 @@ func nonProfit() {
     
     let fieldTrips = 2
     let jobSearch = 1
-    
+    // constants
     if fieldTrips > jobSearch {
         print("They go on more fieldtrips for fun to attend")
     }
