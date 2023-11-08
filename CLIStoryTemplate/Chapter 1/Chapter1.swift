@@ -8,7 +8,7 @@ import Foundation
  
 struct Person {
     var name: String
-    var age: Int = 0
+    var age: Int
     var ethnicity: String
     let isSinger: Bool
     let isPersonOfGod: Bool
@@ -16,18 +16,19 @@ struct Person {
     }
         
 
-var Jonathan = Person.init(name: "Jonathan", age: 29, ethnicity: "African American",
+var Jonathan = Person.init(name: "Jonathan", age: 27, ethnicity: "African American", 
                            isSinger: true, isPersonOfGod: true)
-
-        struct city {
-            var cityName: String
-            var cityRegion: String
-            var cityYear: Int
-            
-        }
-
-        var Detroit = city.init(cityName: "Detroit", cityRegion: "Midwest", cityYear: 1994)
-        var LosAngeles = city.init(cityName: "LosAngeles", cityRegion: "West", cityYear: 1995)
+var wife = Person(name: "wife", age: 26, ethnicity: "African American",
+                           isSinger: false, isPersonOfGod: true)
+//        struct city {
+//            var cityName: String
+//            var cityRegion: String
+//            var cityYear: Int
+//            
+//        }
+//
+//        var Detroit = city.init(cityName: "Detroit", cityRegion: "Midwest", cityYear: 1994)
+//        var LosAngeles = city.init(cityName: "LosAngeles", cityRegion: "West", cityYear: 1995)
 
 func moveToLA() -> String {
     return "After months of long discussions with his wife, they decided that they were moving to LA so Jonathan can persue his dream."
@@ -69,7 +70,7 @@ var year = whenJonathanMovedtoCali(city: "Los Angeles, CA")
 
 
 func chapterOne() {
-    print(Jonathan)
+    print(Jonathan) ; print("and his") ; print(wife)
     print(livedInDetroit()) ; print(aspiringSinger())
     print(moveToLA()) ; print(choose(theyMovedToLA: .moved))
     if year == nil {
@@ -82,12 +83,5 @@ func chapterOne() {
     for x in story {
         print(x)
     }
-    
-    
-    
-    
-    
-    
-    
 }
 
